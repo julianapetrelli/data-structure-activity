@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class CentroOeste {
+            estados() array
+          }
+          class Nordeste {
+            estados() array
+          }
+          class Norte {
+            estados() array
+          }
+          class Strategy {
+            estados(data) None
+          }
+          class Sudeste {
+            estados() array
+          }
+          class Sul {
+            estados() array
+          }
+          class Sumario {
+            format_csv() None
+            format_json() None
+          }
+          CentroOeste --|> Strategy
+          Nordeste --|> Strategy
+          Norte --|> Strategy
+          Sudeste --|> Strategy
+          Sul --|> Strategy
+          Strategy --* Sumario : _strategy
+  
+       </div>
+  </body>
+</html>
