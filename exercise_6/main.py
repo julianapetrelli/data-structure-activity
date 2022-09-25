@@ -3,8 +3,6 @@ import json
 import random
 import pandas as pd
 from abc import ABC, abstractmethod
-import graphviz
-
 
 class Strategy(ABC):
     @abstractmethod
